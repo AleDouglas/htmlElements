@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-pri);
+}
+
+
+:root{
+    --color-primary: #6918B4; /* 1º Button Color's */
+    --color-sec: #36117E; /* 1º Button Color's Effect */
+    --color-terc: #8318B4;
+    --color-quar: #1A3EB4;
+    --color-quin: #122B7E;
+    --color-fundo: white;
+    --color-darktheme: rgba(36,35,55,255);
+    
+    --color-fontdarktheme: white;
+
+    --color-pri: rgb(41,54,69); /* Navbar Background Color */
+    --color-boxdarktheme: #2f3b52; /* Background Color */
+    --color-boxdarkThemeTr: rgba(36,35,55); /* Favorite Background Color */
+
+    --container--width-ll: 25%;
+    --container--width-lg: 75%;
+    --container--width-mg: 86%;
+    --container--width-sm: 90%;
+    --container--width-ms: 100%;
+
+    --color-boxdarkThemeTr: rgba(36,35,55,255);
+    --color-primaryTr: hsl(271, 76%, 40%, .4);
+
+
+}
+
+/*  ################ STYLESHEET GERAL ################   */
+
+.container{
+    width: var(--container--width-ms);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+}
+
+/*  ################ NAVBAR START ################   */
+
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--color-fontdarktheme);
+    text-decoration: none;
+    
+}
+header{
+    background-color: var(--color-pri); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.boxLogo{
+    width: 98px;
+    height: 64px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.9s ease 0s;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+/* Definindo Animação dos Links */
+.nav__links li a:hover {
+    background-color:  var(--color-pri);
+    border: none;
+    border-radius: 50px;
+    padding: 9px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.iconNav {
+    transition: all 0.3s ease 0s;
+    width: 16px;
+    height: 32px;
+    
+}
+
+.iconNav:hover{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+
+}
+.toggle-button{
+    position: absolute;
+    top: 1.9rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+/*  ################ NAVBAR END ################   */
+@media only screen and (max-width: 800px){
+    /* NAVAR MEDIA SCREEN */
+    header{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        
+    }
+
+    .nav__links {
+        display: none
+    }
+    .nav__links.active {
+        display: block;
+    }
+
+    .nav__links li{
+        display: block;
+        padding: 0 0;
+        margin-top: 3%;
+        
+    }
+
+    .nav__icon {
+        display: none
+    }
+    .nav__icon.active {
+        display: flex
+    }
+
+    /* ICONES DAS REDES SOCIAIS */
+    .iconNav {
+        margin: 2% 2%;
+        transition: all 0.3s ease 0s;
+        width: 16px;
+        height: 32px;
+        margin-top: 3%;
+
+    }
+    
+    .iconNav:hover{
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        margin-top: 3%;
+
+    }
+    /* #### */
+    .toggle-button{
+        display: flex;
+    }
+}
