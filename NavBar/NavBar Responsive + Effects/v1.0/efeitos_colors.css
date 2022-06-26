@@ -1,0 +1,58 @@
+/* Colors */
+/* Blue */
+.blueNeon span:nth-child(1){
+    background: linear-gradient(90deg, transparent, var(--color-BlueNeon));
+  
+}
+.blueNeon span:nth-child(2){
+    background: linear-gradient(180deg, transparent, var(--color-BlueNeon));
+    
+}
+  
+.blueNeon span:nth-child(3){
+    background: linear-gradient(270deg, transparent, var(--color-BlueNeon));
+    
+}
+  
+.blueNeon span:nth-child(4){
+    background: linear-gradient(360deg, transparent, var(--color-BlueNeon));
+    
+}
+/* Green */
+.greenNeon span:nth-child(1){
+    background: linear-gradient(90deg, transparent, var(--color-GreenNeon));
+  
+}
+.greenNeon span:nth-child(2){
+    background: linear-gradient(180deg, transparent, var(--color-GreenNeon));
+    
+}
+  
+.greenNeon span:nth-child(3){
+    background: linear-gradient(270deg, transparent, var(--color-GreenNeon));
+    
+}
+  
+.greenNeon span:nth-child(4){
+    background: linear-gradient(360deg, transparent, var(--color-GreenNeon));
+    
+}
+/* Red */
+.redNeon span:nth-child(1){
+    background: linear-gradient(90deg, transparent, var(--color-RedNeon));
+  
+}
+.redNeon span:nth-child(2){
+    background: linear-gradient(180deg, transparent, var(--color-RedNeon));
+    
+}
+  
+.redNeon span:nth-child(3){
+    background: linear-gradient(270deg, transparent, var(--color-RedNeon));
+    
+}
+  
+.redNeon span:nth-child(4){
+    background: linear-gradient(360deg, transparent, var(--color-RedNeon));
+    
+}
