@@ -1,0 +1,142 @@
+
+.topbar{
+    position: fixed;
+    height: 90px;
+    background-color: var(--color-NavBackground);
+    display: flex;
+    justify-content: space-around;
+    /* padding: 30px 10%; */
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navBarHR{
+    border-color: var(--color-HrColor);
+    margin-top: 90px;
+}
+
+.navegar ul{
+    display: flex;
+    align-items: center;
+}
+.navegar li{
+    transition: all 0.9s ease 0s;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.navegar a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff
+}
+/* 
+.navegar li:hover{
+    transition: all 0.3s ease 0s;
+    padding: 2px 25px;
+    border: 0.5px solid black;
+    background-color: var(--color-NavButton);
+    border-radius: 20px;
+}
+*/
+.toggleButton{
+    position: absolute;
+    left: 90%;
+    opacity: 0;
+}
+
+.conteudo{
+    margin-top: 95px;
+}
+
+/* Recursividade */
+@media only screen and (max-width: 800px) {
+    .toggleButton{
+        opacity: 1;
+        margin-top: 18px;
+        cursor: pointer;
+    }
+    .topbar{
+        transition: all 0.9s ease 0s;
+        display: block;
+        height: 75px;
+    }
+    .titleBar{
+        padding-left: 7%;
+        margin-top: 3%
+    }
+    .conteudo{
+        transition: all 0.9s ease 0s;
+        margin-top: 75px;
+    }
+    
+    .navegar ul{
+        display: flex;
+        padding-left: 3%;
+        flex-direction: column;
+        /* justify-content: center; */
+        opacity: 0;
+        align-items: flex-start;
+    }
+    .sociais{
+        padding-left: 3%;
+        opacity: 0;
+        margin-top: 2%;
+    }
+
+    .navegar li{
+        transition: all 0.9s ease 0s;
+        padding: 0 20px;
+        display: block;
+        margin-top: 2%;
+        opacity: 0;
+    }
+    .navegar.active a{
+        transition: all 0.9s ease 0s;
+        padding: 0;
+    }
+    .navegar.active a:hover{
+        transition: all 0.9s ease 0s;
+        padding: 0 20px;
+    }
+
+    .topbar.active{
+        transition: all 0.9s ease 0s;
+        opacity: 1;
+        display: block;
+        height: 185px;
+    }
+    .conteudo.active{
+        transition: all 0.9s ease 0s;
+        margin-top: 185px;
+    }
+    
+    .navegar.active ul{
+        opacity: 1;
+        transition: all 0.9s ease 0s;
+        display: flex;
+        padding-left: 3%;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: flex-start;
+    }
+    .sociais.active{
+        transition: all 0.9s ease 0s;
+        opacity: 1;
+        padding-left: 3%;
+        margin-top: 2%;
+    }
+
+    .navegar.active li{
+        opacity: 1;
+        transition: all 0.9s ease 0s;
+        padding: 0;
+        display: block;
+        margin-top: 2%
+    }
+    
+}
