@@ -1,0 +1,35 @@
+/*
+
+Como os container's estão codificados:
+
+.container => Apenas uma Janela de Largura 100% com nenhuma propriedade em especial
+.container fluid => Altera o Display para Flex , ou seja, põe os itens um ao lado do outro sem espaçamento.
+.container fluid center => Itens um ao lado do outro sem espaçamento entro eles localizado no centro da página
+.container fluid center => Caso tenha apenas um objeto dentro dele, esse objeto é centralizado.
+.container fluid center -v => Centraliza os objetos na HORIZONTAL
+*/
+
+.container{
+width: 100%;
+
+}
+
+.fluid{
+    display: flex;
+
+}
+
+.center{
+    justify-content: center;
+}
+
+.-v{
+    width: auto;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.index{
+    margin-top: 90px;
+}

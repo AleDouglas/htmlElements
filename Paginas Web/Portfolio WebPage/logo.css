@@ -1,0 +1,104 @@
+.logo{
+    transition: all 0.9s ease 0s;
+    width: 400px;
+    margin-left: 9vw;
+    padding: 120px 20px;
+
+}
+
+.logo p{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 3%;
+}
+
+.logoTitle p{
+    font-size: 46px;
+    letter-spacing: 6px;
+    color: white;
+}
+
+.logoSlogan p{
+    color: aliceblue;
+    opacity: 0.8;
+}
+.about{
+    transition: all 0.9s ease 0s;
+    margin-left: 7%;
+    width: 90%;
+}
+
+.aboutTitle p{
+    letter-spacing: 4px;
+    font-size: 48px;
+    color: white;
+
+}
+
+.aboutGeral p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+    color: aliceblue;
+    opacity: 0.6;
+}
+
+
+/* ANIMAÇÕES */
+
+.neonAnimate.logo {
+    position: relative;
+    display: inline-block;
+
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.9s;
+
+}
+.neonAnimate:hover.logo{
+    padding: 120px 20px;
+}
+
+.neonAnimate.logo span{
+    position: absolute;
+    display: block;
+}
+
+.neonAnimate.logo span:nth-child(1){height: 2px;;animation: btn-anim1 5s linear infinite;}
+.neonAnimate.logo span:nth-child(2){animation: btn-anim2 5s linear infinite;animation-delay: 1.25s}
+.neonAnimate.logo span:nth-child(3){animation: btn-anim3 5s linear infinite;animation-delay: 2.50s}
+.neonAnimate.logo span:nth-child(4){animation: btn-anim4 5s linear infinite;animation-delay: 3.75s}
+
+
+
+/* RESPONSAVIDADE */
+
+@media only screen and (max-width: 990px) {
+    .responsive{ 
+        display: block;
+    }
+    .logo{
+        width: 100%;
+        margin-left: auto;
+
+    }
+    .about{
+        padding-top: 90px;
+    }
+    .aboutTitle p{
+        letter-spacing: 4px;
+        font-size: 40px; /* -8 da Original */
+        color: white;
+    
+    }
+    .aboutGeral p{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 17px; /* -8 da Original */
+        color: aliceblue;
+        opacity: 0.6;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+}

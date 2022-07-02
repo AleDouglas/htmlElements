@@ -1,0 +1,146 @@
+/*
+
+Aqui onde fica o efeito de 'borda animada'.
+Ele é composto por 4 spans , ou seja, 4 linhas que formam uma animação em torno da borda do container.
+Para utilizar basta apenas definir a classe: neonAnimate e adicionar 4 spans.
+Como o arquivo está dividido: 
+ANIMAÇÃO Nº 1 = Animação :hover e preenche todo o container ao final , usado normalmente em botões
+ANIMAÇÃO Nº 2 = Animação continua sem preenchimento, normalmente usado em "Janelas"
+ANIMAÇÃO Nº 3 = Animação da seção de Projetos - Responsável pelo botão VERMAIS ( tec )
+> Para usar a segunda por exemplo, basta apenas: class="neonAnimate sec" , e então, será uma animação continua sem precisar por o mouse por cima.
+> Resumindo: "class="neonAnimate sec COLOR"
+CORES DISPONÍVEIS:
+blueNeon
+greenNeon
+redNeon 
+*/
+
+
+
+
+/* ANIMAÇÃO Nº 1 */
+.neonAnimate{
+    transition: all 0.9s ease 0s;
+}
+.neonAnimate span{
+    transition: all 0.9s ease 0s;
+}
+
+.neonAnimate:hover {
+    position: relative;
+    display: inline-block;
+    padding: 5px 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.9s;
+
+}
+
+.neonAnimate.sec{
+  position: relative;
+  display: inline-block;
+  padding: 5px 25px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.9s;
+}
+
+
+
+/*animação do span para criar linhas*/
+
+.neonAnimate:hover span {
+    position: absolute;
+    display: block;
+}
+.neonAnimate.sec span{
+  position: absolute;
+  display: block;
+}
+
+  /*span 1*/
+  
+.neonAnimate span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    
+    animation: btn-anim1 1s linear infinite;
+}
+.neonAnimate.sec span:nth-child(1){height: 2px;}
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+
+    50%,100% {
+      left: 100%;
+    }
+}
+/*span 2*/
+.neonAnimate span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+}
+
+/*span 3*/
+.neonAnimate span:nth-child(3) {
+
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  
+}
+
+@keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+
+    50%,100% {
+      right: 100%;
+    }
+}
+  
+/*span 4*/
+.neonAnimate span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+
+@keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,100% {
+      bottom: 100%;
+    } 
+}
+
+
+
+
+

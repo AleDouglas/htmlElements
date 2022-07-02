@@ -1,0 +1,170 @@
+.sectionProjeto{
+    width: 100%;
+    align-items: center;
+}
+
+.sectionProjeto p{
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 4px;
+    color: white;
+}
+
+
+.groupProjeto{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+
+}
+
+.windowProjeto{
+    cursor: pointer;
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    /* border: 2px solid white; */
+    transition: all 0.9s ease 0s;
+
+}
+
+.windowProjeto p{
+    margin-top: 125px;
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+
+/* TOGGLE BUTTON */
+.desactive{
+    transition: all 0.9s ease 0s;
+    margin: 0;
+    height: 0%;
+    opacity: 0;
+
+}
+.windowProjeto.desactive p{
+    margin-top: 0px;
+}
+.projetoButton{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 35px
+    
+}
+
+.projetoButton a{
+    cursor: pointer;
+    transition: all 0.9s ease 0s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 15px 20px;
+    
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: #fff
+
+}
+.projetoButton a:hover{
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+/* TOGGLE BUTTON */
+@keyframes animateProjeto {
+    0% {
+        height: 0px;
+        opacity: 0;
+
+    }
+    100% {
+        height: 250px;
+        opacity: 1;
+
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .windowProjeto{
+        transition: all 0.9s ease 0s;
+        opacity: 1;
+        width: 290px;
+        height: 250px;
+        animation: animateProjeto 1.5s;
+
+    }
+    
+    .desactive{
+        transition: all 0.9s ease 0s;
+        height: 0px;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1300px){
+    .windowProjeto{
+        transition: all 0.9s ease 0s;
+        opacity: 1;
+        width: 240px;
+        height: 250px;
+        animation: animateProjeto 1.5s;
+    }
+    .desactive{
+        transition: all 0.9s ease 0s;
+
+        height: 0px;
+        margin: 0;
+
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .groupProjeto{
+        display: block;
+        text-align: -webkit-center;
+    }
+    .windowProjeto{
+        transition: all 0.9s ease 0s;
+        opacity: 1;
+        margin-bottom: 25px;
+        width: 290px;
+        animation: animateProjeto 1.5s;
+
+        
+    }
+    .desactive{
+        transition: all 0.9s ease 0s;
+        height: 0px;
+        margin: 0;
+
+    }
+}
+
+
+/* ANIMAÇÃO DA DIV DO PROJETO */
+.neonAnimate.projeto {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.9s;
+
+}
+
+.neonAnimate.projeto:hover span{
+    position: absolute;
+    display: block;
+}
+
+.neonAnimate.projeto span:nth-child(1){height: 2px;;animation: btn-anim1 5s linear infinite;}
+.neonAnimate.projeto span:nth-child(2){animation: btn-anim2 5s linear infinite;animation-delay: 1.25s}
+.neonAnimate.projeto span:nth-child(3){animation: btn-anim3 5s linear infinite;animation-delay: 2.50s}
+.neonAnimate.projeto span:nth-child(4){animation: btn-anim4 5s linear infinite;animation-delay: 3.75s}

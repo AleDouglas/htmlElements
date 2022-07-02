@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="topbar.css">
+    <link rel="stylesheet" type="text/css" href="efeitos.css">
+    <link rel="stylesheet" type="text/css" href="efeitos_colors.css">
+    <!-- CONTAINERS CSS -->
+    <link rel="stylesheet" type="text/css" href="containers.css">
+    <!-- LOGO CSS -->
+    <link rel="stylesheet" type="text/css" href="logo.css">
+    <!-- PROJETOS CSS -->
+    <link rel="stylesheet" type="text/css" href="projetos.css">
+
+    <title>TopBar</title>
+</head>
+<body>
+    <div class="editbackground">
+        <span></span>
+    </div>
+    <!-- Conteúdo da Barra de Navegação -->
+    
+    <div class="topbar dark">
+        <div class="toggleButton">
+            <a onclick="toggleButton()"><img src="icons/menu.svg"></a>
+        </div>
+        <div class="titleBar">
+            <p>LOGO</p>
+        </div>
+        <div class="navegar">
+            <ul>
+                <!-- Aqui onde são inseridos novos botões ao menu-->
+                <li>
+                    <a href="#" class='neonAnimate blueNeon'>
+                    <span></span><span></span><span></span><span></span>
+                    Sobre mim
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class='neonAnimate blueNeon'>
+                    <span></span><span></span><span></span><span></span>
+                    Projetos
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class='neonAnimate blueNeon'>
+                    <span></span><span></span><span></span><span></span>
+                    Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sociais">
+            <img src="icons/instagram.svg" alt="">
+            <img src="icons/github.svg" alt="">
+            <img src="icons/twitter.svg" alt="">
+        </div>
+        
+    </div>
+    <hr class="navBarHR"> <!-- Barra divisória da Barra de Nevegação / Conteúdo da página --> 
+
+    <!-- Conteúdo da Página --> 
+    <div class="conteudo"> <!-- ESSA DIV É RESPONSÁVEL PARA MANTER O SITE RESPONSIVO JUNTO DA BARRA DE NAVEGAÇÃO -->
+    <div class="container fluid responsive"  style="margin-bottom: 15%;padding-top: 7%;">
+        
+        <!-- LOGO -->
+        <div class="container fluid center -v">
+            <div class="logo neonAnimate logo blueNeon">
+                <span></span><span></span><span></span><span></span>
+                <div class="logoTitle">
+                    <p>Alexandre D.</p>
+                </div>
+                <div class="logoSlogan">
+                    <p>Freelance UI Designer <br>& Web Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOBRE MIM CONTEÚDO -->
+        <div class="container fluid center -v ">
+            
+            <div class="about">
+                <div class="aboutTitle">
+                    <p>Olá pessoal! Eu sou Alexandre D.</p>
+                </div>
+                <div class="aboutGeral">
+                    <p>Sou Desenvolvedor Web Front-End e Back-End</p>
+                    <p>Atualmente sou estudante de Ciência da Computação na Universidade Federal de Sergipe e resido em Aracaju.</p>
+                    <p>Ingressei na Universidade no ano de 2020, por enquanto não possuo nenhum projeto profissional ou 
+                        experiência profissional na área, neste momento estou em busca de ter minha primeira experiência.<br>
+                        Falando um pouco sobre mim, sou uma pessoa bastante flexível, me adapto muito bem a mudanças e gosto de gerir bastante meus horários,
+                        prezando bastante pela pontualidade e eficiência em como trabalho.<br>
+                        Se tiver interessando em saber mais, basta continuar descendo a página :) 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border-color: rgb(255,255,255,0.4)">
+    <div class="container" style="background-color: #121B26;padding: 35px 20px;">
+        <div class="sectionProjeto">
+            <p>Projetos</p>
+        </div>
+        <div class="groupProjeto" style="margin-bottom: 13px;">
+            <div class="windowProjeto neonAnimate projeto greenNeon">
+                <span></span><span></span><span></span><span></span>
+                <p>EM BREVE</p>
+            </div>
+            <div class="windowProjeto neonAnimate projeto greenNeon">
+                <span></span><span></span><span></span><span></span>
+                <p>EM BREVE</p>
+                
+            </div>
+            <div class="windowProjeto neonAnimate projeto greenNeon">
+                <span></span><span></span><span></span><span></span>
+                <p>EM BREVE</p>
+                
+            </div>
+        </div>
+        
+
+        <div class="groupProjeto extra desactive">
+            <div class="windowProjeto extra desactive neonAnimate projeto greenNeon">
+                <span></span><span></span><span></span><span></span>
+                <p>EM BREVE</p>
+
+            </div>
+            <div class="windowProjeto extra desactive neonAnimate projeto greenNeon">
+                <span></span><span></span><span></span><span></span>
+                <p>EM BREVE</p>
+                
+            </div>
+            <div class="windowProjeto extra desactive neonAnimate projeto greenNeon">
+                <span></span><span></span><span></span><span></span>
+                <p>EM BREVE</p>
+                
+            </div>
+        </div>
+        <div class="projetoButton"><a onclick="toggleProjeto()" id='projetoButton'>Ver mais...</a></div>
+
+    </div>
+    </div> <!-- Fim da DIV.conteudo -->
+
+
+
+
+<script src="topbar.js"></script>
+</body>
+</html>

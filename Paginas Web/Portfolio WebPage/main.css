@@ -1,0 +1,54 @@
+/*
+
+Nesse arquivo é onde está localizado as variáveis e as alterações no site de modo global.
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap'); /* font-family: 'Josefin Sans', sans-serif; */
+:root{
+
+    --color-NavBackground: rgb(41,54,69, 1);
+    --color-NavButton: #7700b3;
+    --color-HrColor: #03e9f4;
+    /* Background's*/
+    --color-Background: #06080D;
+    --color-BackgroundBlue: #1B8EF2;
+    --color-BackgroundBlueDark: #1A2E40;
+    --color-BackgroundBlueSecond: #22A2F2;
+    --color-BackgroundBlueWhite: #5CB9F2;
+
+    --color-BlueNeon: #03e9f4;
+    --color-GreenNeon: #03f40f;
+    --color-RedNeon: #f43303;
+    --color-WhiteNeon: #eff3f0;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-Background);
+}
+
+
+.conteudo{
+    margin-top: 150px;
+}
+
+
+@media only screen and (max-width: 800px){
+    .conteudo{
+        transition: all 0.9s ease 0s;
+        margin-top: 150px;
+    }
+    .conteudo.active{
+        transition: all 0.9s ease 0s;
+        margin-top: 255px;
+    }
+}
